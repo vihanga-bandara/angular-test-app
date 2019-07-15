@@ -1,0 +1,7 @@
+<h4> This is inside the servers component</h4>
+<app-server></app-server>
+<button class="btn btn-primary" [disabled] = "!allowNewServers" (click)="onServerButtonClick()">Add Server</button>
+<!--<p [innerText]="allowNewServers"></p>-->
+<p [innerText]="onServerCreate"></p>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p [innerText]="serverName"></p>
